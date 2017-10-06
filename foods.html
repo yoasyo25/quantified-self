@@ -2,12 +2,23 @@
 <html>
   <head>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
 
     <meta charset="utf-8">
     <title>Quantified Self - Manage Foods</title>
   </head>
   <body>
+    <form class="food-form" action="foods.html">
+      <div class="food-input">
+        <input type="text" name="food" placeholder="Enter a food">
+      </div>
+      <div class="calories-input">
+
+        <input type="text" name="calories" placeholder="Enter Calories">
+      </div>
+      <input class="waves-effect waves-light btn" id="submit-food" type="submit" value="Add Food" method="get">
+    </form>
     <table id="myTable" class="bordered highlight">
       <thead>
         <tr>
