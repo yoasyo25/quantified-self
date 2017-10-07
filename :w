@@ -27,6 +27,7 @@ var getFood = function(){
       $(".calories-input").append('<p id="calories-error">Please enter a calorie amount</p>')
     } else {
       $(".calories-error").remove();
+    }
 $.post( api, {food: {
   name: name,
   calories: calories}, success: function() {
@@ -34,10 +35,10 @@ $.post( api, {food: {
       window.location.reload();
     });
     deleteFoodListener();
-  }
+    
+}
+  
 });
-    }
-};
 
 
 function deleteFoodListener() {
