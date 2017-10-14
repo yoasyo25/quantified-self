@@ -18,47 +18,42 @@
           font-family: futura
         }
         button {
-          border-radius: 50%;
-          background-color: Transparent;
-          color: red;
-          font-size: 15px
-          
-        }
-        button:hover {
+          border-radius: 70%;
           background-color: red;
-          color: white; 
+          color: white;
+          font-size: 15px          
         }
 
         table {
           text-align: left
         }
 
-            </style>
-       
-    <form class="food-form" action="foods.html">
-      <div class="food-input">
-        <input type="text" name="food" placeholder="Enter a food">
-      </div>
-      <div class="calories-input">
+      </style>
 
-        <input type="text" name="calories" placeholder="Enter Calories">
-      </div>
-      <input class="waves-effect waves-light btn" id="submit-food" type="submit" value="Add Food" method="get">
-    </form>
-    <input type="text" id="myInput" placeholder="Search for food...">
-    <table id="myTable" class="bordered highlight">
-      <thead>
-        <tr>
-          <th data-field="id">Name</th>
-          <th data-field="name">Calories</th>
-          <th data-field="delete"></th>
-        </tr>
-      </thead>
-      <tbody id="t-body">
+      <form class="food-form" action="foods.html">
+        <div class="food-input">
+          <input type="text" name="food" placeholder="Enter a food">
+        </div>
+        <div class="calories-input">
 
-      </tbody>
-    </table>
-    <script src="main.bundle.js"></script>
-    <script src="lib/foods.js"></script>
+          <input type="text" name="calories" placeholder="Enter Calories">
+        </div>
+        <input class="waves-effect waves-light btn" id="submit-food" type="submit" value="Add Food" method="get">
+      </form>
+      <input type="text" id="myInput" placeholder="Search for food...">
+      <table id="myTable" class="bordered highlight">
+        <thead>
+          <tr>
+            <th data-field="id">Name</th>
+            <th data-field="name">Calories</th>
+            <th data-field="delete"></th>
+          </tr>
+        </thead>
+        <tbody id="t-body">
+
+        </tbody>
+      </table>
+      <script src="main.bundle.js"></script>
+      <script src="lib/foods.js"></script>
   </body>
 </html>
