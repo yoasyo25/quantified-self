@@ -9,6 +9,32 @@
     <title>Quantified Self - Manage Foods</title>
   </head>
   <body>
+      <style>
+        th {
+          color: blue
+        }
+
+        body {
+          font-family: futura
+        }
+        button {
+          border-radius: 50%;
+          background-color: Transparent;
+          color: red;
+          font-size: 15px
+          
+        }
+        button:hover {
+          background-color: red;
+          color: white; 
+        }
+
+        table {
+          text-align: left
+        }
+
+            </style>
+       
     <form class="food-form" action="foods.html">
       <div class="food-input">
         <input type="text" name="food" placeholder="Enter a food">
@@ -25,7 +51,7 @@
         <tr>
           <th data-field="id">Name</th>
           <th data-field="name">Calories</th>
-          <th data-field="delete">Delete</th>
+          <th data-field="delete"></th>
         </tr>
       </thead>
       <tbody id="t-body">
